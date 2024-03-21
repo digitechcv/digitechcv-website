@@ -1,11 +1,16 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Button from "react-bootstrap/Button";
+import HeroSection from "./components/hero/hero-section";
+import NavBar from "./components/navbar/NavBar";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <h1 className="display-2">Digitechcv</h1>
-    </main>
+    <>
+      <main>
+        <NavBar />
+        <HeroSection />
+      </main>
+    </>
   );
 }
