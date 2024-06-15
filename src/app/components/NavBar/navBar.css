@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+.nav-link {
+    text-transform: uppercase;
+    font-family: 'Yantramanav', sans-serif;
+    color: black;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.logo-navBar {
+    margin-left: 25px;
+}

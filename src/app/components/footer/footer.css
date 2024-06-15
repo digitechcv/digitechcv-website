@@ -1,0 +1,43 @@
+
+
+div.footer-content.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    
+}
+
+.footer-content {
+    background-color: #00102d;
+    color: white;
+    
+}
+
+.footer-description {
+    font-size: 1.3rem;
+}
+
+ul.FootersocialMedia {
+    display: flex;
+}
+
+ ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-content h6 {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}

@@ -1,0 +1,25 @@
+.carousel-container {
+    padding-bottom: 8rem;
+    color: black;
+}
+
+.carousel-caption {
+    left: 0;
+}
+
+.img-aboutUs {
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    display: none;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #104cba;
+}
+
+.visao-img, .valores-img {
+    height: 477px;
+    width: 477px;
+}

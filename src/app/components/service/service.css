@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+div.service {
+    background-color: whitesmoke;
+    margin-top: 0;
+    padding-top: 0;
+} 
+
+.section-title {
+    color: #104cba;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: linear-gradient(to right, #104cba, #00ccff, #104cba);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 220% 150%;
+    display: inline-block;
+    position: relative; 
+    z-index: 1;
+    padding-bottom:4rem;
+    padding-top: 4rem;
+    font-size: 3rem;
+}
+
+img.card-img-top {
+    padding: 1.5rem;
+}
+
+div.card-title.h5 {
+    padding-bottom: 2rem;
+    font-weight: 700;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+p.card-text {
+    padding-bottom: 2rem;
+    font-size: 16px;
+    font-weight: 400;
+    /* font-family: 'Yantramanav', sans-serif; */
+}
+
+button.btn.button1 {
+    margin-bottom: 2rem;
+    background-color: #104cba;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: white;
+    font-weight: 700;
+}
+
+button.btn.button1:hover {
+    background-color: #104cba;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
+.img-card-service {
+    opacity: 0.6;
+}
+
+
+
+
+.card1:hover {
+    background-image: url('https://validthemes.net/themeforest/wp/crysa/wp-content/uploads/2022/07/4.jpg');
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    color: rgb(208, 206, 206);
+    border: 0;
+}
+
+.card2:hover {
+    background-image: url('https://validthemes.net/themeforest/wp/crysa/wp-content/uploads/2022/07/9-1.jpg');
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    border: 0;
+}
+
+.card3:hover {
+    background-image: url('https://validthemes.net/themeforest/wp/crysa/wp-content/uploads/2022/07/3.jpg');
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    border: 0;
+}
+
+.card4:hover {
+    background-image: url('https://validthemes.net/themeforest/wp/crysa/wp-content/uploads/2022/07/4-1.jpg');
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    border: 0;
+}
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+
+.containerForm {
+    color: white;
+    background: linear-gradient( #00102d 0%, #0059fc 100%);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+
+.left-side h3 {
+    width: 90%;
+}
+
+.buttonSubmit {
+    width: 100%;
+}
+
+/* .bg {
+    background-image: url('https://validthemes.net/themeforest/wp/crysa/wp-content/uploads/2022/06/25.png');
+    background-repeat: no-repeat;
+      
+} */
+
+
+
+

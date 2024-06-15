@@ -1,0 +1,28 @@
+.card-how-to {
+    height: 500px;
+}
+
+.img-how-to {
+    height: 181px;
+    width: 128px;
+}
+
+.img-how-to1 {
+    height: 141px;
+    width: 141px;
+}
+
+.container-how-to {
+    padding-bottom: 45px;
+}
+
+
+
+svg.bi.bi-chevron-right {
+    border: 1px dotted black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgb(167, 167, 165);
+}
