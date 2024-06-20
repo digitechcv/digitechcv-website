@@ -6,7 +6,8 @@ import Col from 'react-bootstrap/Col';
 import "./contactForm.css";
 import { Form, Button } from 'react-bootstrap';
 import * as Icon from 'react-bootstrap-icons';
-import { useEffect, useRef, useState } from 'react';
+import ToastMessage from '../toast/ToastMessage';
+import { useState } from 'react';
 
 function ContactForm() {
     const [name, setName] = useState('');
@@ -14,30 +15,36 @@ function ContactForm() {
     const [phone, setPhone] = useState('');
     const [subject, setSubject] = useState('');
 
-    const data = {
-        name,
-        email,
-        phone,
-        subject
-    }
-
-    useEffect(() => {
-        fetch('https://formsubmit.co/digitechitcv@gmail.com', {
-        method: 'POST',
-            body: data,
-        })
-        .then((response) => response.json())
-        .then((data) => console.log(data))
-        .catch((error) => console.log(error));
-    },[])
-
     const handleSubmit = (e) => {
-    e.preventDefault();
+        e.preventDefault();
 
-    // const data = new FormData(form.current);
+        if (name === '' || email === '' || phone === '' || subject === '')
+            return 
+
+        
+        fetch('https://formsubmit.co/ajax/digitechitcv@gmail.com', {
+            method: "POST",
+            headers: { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                name,
+                email,
+                phone,
+                subject
+            })
+        })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.log(error));
     
-    console.dir(data);
+        //console.dir(data);
 
+        setName('');
+        setEmail('');
+        setPhone('');
+        setSubject('');
     
     };
     return (
@@ -51,27 +58,27 @@ function ContactForm() {
                         <p> <Icon.CheckCircleFill/> Temos a reposta para si</p>
                     </Col>
                     <Col className='right-side1'>
-                        <Form method="POST" encType="multipart/form-data" onSubmit={handleSubmit}>
+                        <Form onSubmit={handleSubmit}>
                             <Row className="mb-3">
                                 <Form.Group as={Col} controlId="formGridName">
                                 <Form.Label>Nome</Form.Label>
-                                <Form.Control type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Insira Nome" />
+                                <Form.Control type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Insira Nome" required/>
                                 </Form.Group>
 
                                 <Form.Group as={Col} controlId="formGridEmail">
                                 <Form.Label>Email</Form.Label>
-                                <Form.Control type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Insira email" />
+                                <Form.Control type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Insira email" required/>
                                 </Form.Group>
                             </Row>
                             <Row className="mb-3">
                                 <Form.Group as={Col} controlId="formGridTel">
                                 <Form.Label>Numero</Form.Label>
-                                <Form.Control type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Insira seu numero" />
+                                <Form.Control type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Insira seu numero" required/>
                                 </Form.Group>
 
                                 <Form.Group as={Col} controlId="formGridSelect">
                                 <Form.Label>Assunto</Form.Label>
-                                <Form.Select aria-label="Escola a sua opção" value={subject} onChange={(e) => setSubject(e.target.value)}>
+                                <Form.Select aria-label="Escola a sua opção" value={subject} onChange={(e) => setSubject(e.target.value)} required>
                                 <option>Escola a sua opção</option>
                                 <option value="Desenvolvimento de Software">Desenvolvimento de Software</option>
                                 <option value="Assistência Técnica">Assistência Técnica</option>
@@ -79,7 +86,9 @@ function ContactForm() {
                                 <option value="Marketing Digital">Marketing Digital</option>
                                 </Form.Select>
                                 </Form.Group>
-                                
+                            </Row>
+                            <Row className='mb-3'>
+                                <input type="hidden" name="_template" value="table"></input>
                             </Row>
                             <Button variant="primary" type="submit" className="mt-3 buttonSubmit">
                                 Submeter
