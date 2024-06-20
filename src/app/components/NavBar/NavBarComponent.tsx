@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import "./navBar.css";
 
-const NavBar = () => {
+const NavBarComponent = () => {
   return (
     <>
         <Navbar className="" expand="md">
@@ -47,4 +47,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar;
+export default NavBarComponent;
