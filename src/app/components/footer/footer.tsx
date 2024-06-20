@@ -3,6 +3,7 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
 import * as Icon from 'react-bootstrap-icons';
 import './footer.css';3
 
@@ -11,7 +12,7 @@ function Footer() {
         <Container fluid className='footer'>
             <Row className='footer-content' p-5 m-5>
                 <Col className='footer-description text-white mx-5 pt-5'>
-                    <img src="/images/DigiTech 1.png" alt="" className='mb-3' />
+                    <Image src="/images/DigiTech 1.png" alt="" className='mb-3' />
                     <p>
                     A Digitech LDA, 
                     é uma empresa inovadora
@@ -22,7 +23,7 @@ function Footer() {
                 <Col className='footer-services pt-5'>
                     <h6>Serviços</h6>
                     <ul>
-                       <a href='service1'><li>Desenvolvimento de Software </li></a> 
+                        <a href='service1'><li>Desenvolvimento de Software </li></a> 
                         <a href='service2'><li>Assistência Técnica </li></a>
                         <a href="service3"><li>Formação em TICS </li></a>
                         <a href="service4"><li>Marketing Digital </li></a>

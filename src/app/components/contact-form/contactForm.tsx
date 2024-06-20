@@ -15,8 +15,8 @@ function ContactForm() {
     const [phone, setPhone] = useState('');
     const [subject, setSubject] = useState('');
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const handleSubmit = (event: any) => {
+        event.preventDefault();
 
         if (name === '' || email === '' || phone === '' || subject === '')
             return 

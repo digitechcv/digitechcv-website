@@ -1,6 +1,7 @@
 'use client'
 
 import { Container, Row, Col } from 'react-bootstrap';
+import Image from 'react-bootstrap/Image';
 import './clients.css'; 
 
 const ClientsSection = () => {
@@ -11,28 +12,28 @@ const ClientsSection = () => {
             <div className="scroll-container">
                 <div className="scroll-content">
                     <div className="clients">
-                        <img src="/images/clients/ujamaa.png" alt="Client 1" className="mb-3" />
+                        <Image src="/images/clients/ujamaa.png" alt="Client 1" className="mb-3" />
                     </div>
                     <div className="clients">
-                        <img src="/images/clients/Cam.png" alt="Client 2" className="mb-3 img-team-2" />
+                        <Image src="/images/clients/Cam.png" alt="Client 2" className="mb-3 img-team-2" />
                     </div>
                     <div className="clients">
-                        <img src="/images/clients/imontrond.png" alt="Client 3" className="mb-3" />
+                        <Image src="/images/clients/imontrond.png" alt="Client 3" className="mb-3" />
                     </div>
                     <div className="clients">
-                        <img src="/images/clients/topoecas.png" alt="Client 4" className="mb-3" />
+                        <Image src="/images/clients/topoecas.png" alt="Client 4" className="mb-3" />
                         </div>
                         <div className="clients">
-                        <img src="/images/clients/ujamaa.png" alt="Client 1" className="mb-3" />
+                        <Image src="/images/clients/ujamaa.png" alt="Client 1" className="mb-3" />
                     </div>
                     <div className="clients">
-                        <img src="/images/clients/Cam.png" alt="Client 2" className="mb-3 img-team-2" />
+                        <Image src="/images/clients/Cam.png" alt="Client 2" className="mb-3 img-team-2" />
                     </div>
                     <div className="clients">
-                        <img src="/images/clients/imontrond.png" alt="Client 3" className="mb-3" />
+                        <Image src="/images/clients/imontrond.png" alt="Client 3" className="mb-3" />
                     </div>
                     <div className="clients">
-                        <img src="/images/clients/topoecas.png" alt="Client 4" className="mb-3" />
+                        <Image src="/images/clients/topoecas.png" alt="Client 4" className="mb-3" />
                     </div>
                 </div>
             </div>

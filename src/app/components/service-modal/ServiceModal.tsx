@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Modal, Button } from "react-bootstrap";
+import Image from "react-bootstrap/Image";
 import "./serviceModal.css";
 
 interface ServiceModalProps {
@@ -56,7 +57,7 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ showModal, handleCloseModal
                 <Modal.Title id="modal-title-vcenter">{modalContent.title}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <img src={modalContent.image} alt={modalContent.title} style={{ width: '100px' }} />
+                <Image src={modalContent.image} alt={modalContent.title} style={{ width: '100px' }} />
                 <p>{modalContent.description}</p>
             </Modal.Body>
             <Modal.Footer>

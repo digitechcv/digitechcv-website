@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import CarouselContent from './CarouselContent';
+import Image from 'react-bootstrap/Image';
 import { Container } from 'react-bootstrap';
 import './about.css';
 
@@ -20,7 +21,7 @@ const AboutUs = () => {
           <Carousel.Item>
             <div className="row align-items-center ">
             <div className="col-md-6">
-                <img src='/images/Missao.png' className='d-inline w-75 img-aboutUs' alt='...' style={{}} />
+                <Image src='/images/Missao.png' className='d-inline w-75 img-aboutUs' alt='...' style={{}} />
             </div>
             <div className="col-md-6 d-flex align-items-center text-black">
               <Carousel.Caption className='text-start missao text-center mt-5' style={{ position: 'relative' }}>
@@ -38,7 +39,7 @@ const AboutUs = () => {
         <Carousel.Item>
           <div className="row align-items-center">
             <div className="col-md-6 d-flex align-items-center justify-content-center">
-              <img
+              <Image
                 src='/images/visao.png'
                 className='d-block w-75 img-aboutUs visao-img'
                 alt='...'
@@ -57,7 +58,7 @@ const AboutUs = () => {
         <Carousel.Item>
           <div className="row align-items-center ">
             <div className="col-md-6  d-flex align-items-center justify-content-center">
-              <img
+              <Image
                 src='/images/valores.png'
                 className='d-block w-75 img-aboutUs valores-img'
                 alt='...'
