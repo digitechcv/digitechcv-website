@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import * as Icon from 'react-bootstrap-icons';
-import './footer.css';3
+import './footer.css';
 
 function Footer() {
     return (

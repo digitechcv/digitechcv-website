@@ -18,9 +18,9 @@ export default function Home() {
         <AboutUs />
         <HowTo />
         <Team />
-        < ContactForm />
+        <ContactForm />
         <Clients />
-        < Footer />
+        <Footer />
       </main>
     </>
   );

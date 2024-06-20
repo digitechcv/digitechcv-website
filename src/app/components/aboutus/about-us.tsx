@@ -1,7 +1,6 @@
 "use client";
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import CarouselContent from './CarouselContent';
 import Image from 'react-bootstrap/Image';
 import { Container } from 'react-bootstrap';
 import './about.css';
