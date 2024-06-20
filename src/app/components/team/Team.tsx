@@ -24,7 +24,7 @@ function Team() {
                     <Col className="text-center team">
                         <Image src="/images/helder.png" alt="" className='mb-3 mt-5' />
                         <h6 className="font-weight-bold">Helder Fonseca</h6>
-                        <p>Desenvolver Web</p>
+                        <p>Desenvolvedor Web</p>
                     </Col>
                 </Row>
             </Container>
