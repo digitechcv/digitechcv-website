@@ -4,6 +4,7 @@ div.service {
     background-color: whitesmoke;
     margin-top: 0;
     padding-top: 0;
+    font-family: 'Yantramanav', sans-serif;
 } 
 
 .section-title {
@@ -34,9 +35,9 @@ div.card-title.h5 {
 
 p.card-text {
     padding-bottom: 2rem;
-    font-size: 16px;
+    font-size: 1.2rem;
     font-weight: 400;
-    /* font-family: 'Yantramanav', sans-serif; */
+    font-family: 'Yantramanav', sans-serif; 
 }
 
 button.btn.button1 {

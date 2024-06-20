@@ -9,11 +9,11 @@ import * as Icon from 'react-bootstrap-icons';
 
 function ContactForm() {
     return (
-        <Container fluid className='containerForm '>
+        <Container fluid className='containerForm bg' id='contactForm'>
             <Container className='content-container'>
-                <Row className='pt-5'>
+                <Row className=' bothside'>
                     <Col className='left-side'>
-                        <span className='mb-5'>Precisa de um projeto?</span>
+                        <span className='mb-5 projectp'>Precisa de um projeto?</span>
                         <h3 className='mb-5 mt-5'>Para mais informações , preencha o formulário ou conctate-nos pelas nossas redes sociais</h3>
                         <p> <Icon.CheckCircleFill/> Resposta rápida</p>
                         <p> <Icon.CheckCircleFill/> Temos a reposta para si</p>
@@ -40,7 +40,7 @@ function ContactForm() {
                                 <Form.Group as={Col} controlId="formGridSelect">
                                 <Form.Label>Assunto</Form.Label>
                                 <Form.Select aria-label="Escola a sua opção">
-                                <option>Escola a sua opção</option>
+                                <option>A sua opção</option>
                                 <option value="1">Desenvolvimento de Software</option>
                                 <option value="2">Assistência Técnica</option>
                                 <option value="3">Formação em TICS </option>
@@ -55,7 +55,7 @@ function ContactForm() {
                         </Form>
                     </Col>
                 </Row>
-            </Container>    
+            </Container>             
       </Container>
     );
   }

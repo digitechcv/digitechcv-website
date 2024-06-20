@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+.team-container {
+    font-family: 'Yantramanav', sans-serif;
+}
+
+.team-container h6 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+.team-container p {
+    font-size: 1.2rem;
+}
+
+
+.team img {
+    width: 300px;
+    border-radius: 80%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@media (max-width: 767px) {
+    .team img {
+        width: 150px; /* Ajuste o tamanho da imagem */
+    }
+
+    .team-container h6 {
+        font-size: 1.2rem; /* Ajuste o tamanho do texto do título */
+    }
+
+    .team-container p {
+        font-size: 1rem; /* Ajuste o tamanho do texto do parágrafo */
+    }
+}

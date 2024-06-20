@@ -11,7 +11,7 @@ export const NavBar = () => {
     <>
         <Navbar className="" expand="md">
           <Container fluid>
-            <Navbar.Brand href="#">
+            <Navbar.Brand href="/">
               <Image
                   src={"/images/digitech.png"}
                   width={80}
@@ -33,7 +33,7 @@ export const NavBar = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-center flex-grow-1 pe-3">
-                  <Nav.Link href="#action1" className='active'>home</Nav.Link>
+                  <Nav.Link href="/" className='active'>home</Nav.Link>
                   <Nav.Link href="#action3">sobre nós</Nav.Link>
                   <Nav.Link href="#action2">serviço</Nav.Link>
                   <Nav.Link href="#action5">Clientes</Nav.Link>

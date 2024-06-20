@@ -6,6 +6,7 @@ import Service from "./components/service/service";
 import Team from "./components/team/Team";
 import ContactForm from "./components/contact-form/contactForm";
 import Footer from "./components/footer/footer";
+import Clients from "./components/clients/clients";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <HowTo />
         <Team />
         < ContactForm />
+        <Clients />
         < Footer />
       </main>
     </>

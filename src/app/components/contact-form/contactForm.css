@@ -1,28 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
 
 .containerForm {
     color: white;
-    background: linear-gradient( #00102d 0%, #0059fc 100%);
-    height: 500px;
+    background: linear-gradient(90deg, #00102d 0%, #0059fc 56%);
+    height: 600px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    font-family: 'Yantramanav', sans-serif;
 } 
 
 .left-side h3 {
     width: 90%;
+    font-size: 1.9rem;
 }
 
-.buttonSubmit {
+.left-side p {
+    font-size: 1.3rem;
+    margin-left: 1px;
+}
+
+.projectp, .form-label {
+    font-size: 1.3rem;
+}
+
+button.buttonSubmit {
     width: 100%;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.right-side1 input, .right-side1 select {
+    padding: 0.8rem;
+    font-size: 1.3rem;
 }
 
 /* .bg {
-    background-image: url('https://validthemes.net/themeforest/wp/crysa/wp-content/uploads/2022/06/25.png');
+    background-image: url('/images/bgcontactform.png');
     background-repeat: no-repeat;
-      
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
 } */
 
 
 
+@media (max-width: 767px) {
+    .projectp, .left-side p {
+        display: none;
+    }
 
+    .left-side h3, .form-label {
+        font-size: 1rem;
+    }
+
+    .bothside {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-side1 input, .right-side1 select {
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+}

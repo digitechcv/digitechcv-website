@@ -1,19 +1,22 @@
-.card-how-to {
-    height: 500px;
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+
+.how-to-container {
+    font-family: 'Yantramanav', sans-serif;
 }
 
-.img-how-to {
-    height: 181px;
-    width: 128px;
-}
-
-.img-how-to1 {
-    height: 141px;
-    width: 141px;
+.img-how-to3 {
+    height: 128px;
+    width: 101px;
 }
 
 .container-how-to {
     padding-bottom: 45px;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+.card-how-to {
+    min-width: 300px;
 }
 
 

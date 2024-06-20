@@ -32,7 +32,7 @@ function Service() {
                     
                         <div className='col card-container'>
                             <Card style={{ width: '19rem' }} className='card1 '>
-                                <Card.Img variant="top" src="https://cdn-icons-png.flaticon.com/128/1163/1163463.png" style={{ width: '8rem' }}  />
+                                <Card.Img variant="top" src="/images/service1.png" style={{ width: '8rem' }}  />
                                 
                                 <Card.Body>
                                     <Card.Title id='service1'>Desenvolvimento de Software</Card.Title>
@@ -47,7 +47,7 @@ function Service() {
                         </div>
                         <div className='col card-container'>
                             <Card style={{ width: '19rem' }} className='card2'>
-                                <Card.Img variant="top" src="https://cdn-icons-png.flaticon.com/128/7576/7576835.png" style={{ width: '8rem' }} />
+                                <Card.Img variant="top" src="/images/service2.png" style={{ width: '8rem' }} />
                                 <Card.Body>
                                     <Card.Title id='service2'>Assistência Técnica</Card.Title>
                                     <Card.Text>
@@ -59,7 +59,7 @@ function Service() {
                         </div>
                         <div className='col card-container'>
                             <Card style={{ width: '19rem' }} className='card3'>
-                                <Card.Img variant="top" src="https://cdn-icons-png.flaticon.com/128/10242/10242258.png" style={{ width: '8rem' }} />
+                                <Card.Img variant="top" src="/images/service3.png" style={{ width: '8rem' }} />
                                 <Card.Body>
                                     <Card.Title id='service3'>Formação em TICS</Card.Title>
                                     <Card.Text>
@@ -73,7 +73,7 @@ function Service() {
                         </div>
                         <div className='col card-container'>
                             <Card style={{ width: '19rem' }} className='card4'>
-                                <Card.Img variant="top" src="https://cdn-icons-png.flaticon.com/128/3141/3141181.png" style={{ width: '8rem' }} />
+                                <Card.Img variant="top" src="/images/service4.png" style={{ width: '8rem' }} />
                                 <Card.Body>
                                     <Card.Title id='service4'>Marketing Digital</Card.Title>
                                     <Card.Text>
