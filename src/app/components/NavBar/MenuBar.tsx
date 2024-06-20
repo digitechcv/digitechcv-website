@@ -6,7 +6,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import "./navBar.css";
 
-const NavBarComponent = () => {
+
+export default function MenuBar() {
   return (
     <>
         <Navbar className="" expand="md">
@@ -47,4 +48,3 @@ const NavBarComponent = () => {
   )
 }
 
-export default NavBarComponent;

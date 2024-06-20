@@ -6,13 +6,13 @@ import ContactForm from "./components/contact-form/contactForm";
 import Footer from "./components/footer/footer";
 import Clients from "./components/clients/clients";
 import HeroSection from "./components/hero/hero-section";
-import NavBarComponent from "./components/navbar/NavBarComponent";
+import MenuBar from "./components/navbar/MenuBar";
 
 export default function Home() {
   return (
     <>
       <main>
-        <NavBarComponent />
+        <MenuBar />
         <HeroSection />
         <Service />
         <AboutUs />
