@@ -53,7 +53,7 @@ function ContactForm() {
                 <Row className=' bothside'>
                     <Col className='left-side'>
                         <span className='mb-5 projectp'>Precisa de um projeto?</span>
-                        <h3 className='mb-5 mt-5'>Para mais informações , preencha o formulário ou conctate-nos pelas nossas redes sociais</h3>
+                        <h3 className='mb-5 mt-5'>Para mais informações , preencha o formulário ou conctate-nos! </h3>
                         <p> <Icon.CheckCircleFill/> Resposta rápida</p>
                         <p> <Icon.CheckCircleFill/> Temos a reposta para si</p>
                     </Col>
