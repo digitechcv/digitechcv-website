@@ -20,7 +20,7 @@ function Footer() {
                     tecnologia da informação
                     </p>
                 </Col>
-                <Col className='footer-services pt-5'>
+                <Col className='footer-services pt-5 mt-5'>
                     <h6>Serviços</h6>
                     <ul>
                         <a href='service1'><li>Desenvolvimento de Software </li></a> 
@@ -41,7 +41,7 @@ function Footer() {
                     <ul className='FootersocialMedia'> 
                         <a href="https://www.instagram.com/digitechcv?igsh=MXRpcWpvYWNpMGs2bQ=="><li className='mx-2'><Icon.Instagram/></li></a>
                         <a href="https://www.facebook.com/digitechcv"><li className='mx-2'><Icon.Facebook/></li></a>
-                        <a href="https://www.linkedin.com/company/101558626/admin/feed/posts/"><li className='mx-2'><Icon.Linkedin/></li></a>
+                        <a href="https://www.linkedin.com/company/digitech-cv/"><li className='mx-2'><Icon.Linkedin/></li></a>
                     </ul>
                 </Col>
             </Row>
