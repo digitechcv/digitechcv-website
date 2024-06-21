@@ -17,7 +17,7 @@ function Footer() {
                     A Digitech LDA, 
                     é uma empresa inovadora
                     e especializada no setor de 
-                    tecnologia da informaçã
+                    tecnologia da informação
                     </p>
                 </Col>
                 <Col className='footer-services pt-5'>
@@ -40,6 +40,8 @@ function Footer() {
                     <h6>Redes sociais</h6>
                     <ul className='FootersocialMedia'> 
                         <a href="https://www.instagram.com/digitechcv?igsh=MXRpcWpvYWNpMGs2bQ=="><li className='mx-2'><Icon.Instagram/></li></a>
+                        <a href="https://www.facebook.com/digitechcv"><li className='mx-2'><Icon.Facebook/></li></a>
+                        <a href="https://www.linkedin.com/company/101558626/admin/feed/posts/"><li className='mx-2'><Icon.Linkedin/></li></a>
                     </ul>
                 </Col>
             </Row>

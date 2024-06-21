@@ -10,7 +10,7 @@ import './menuBar.css';
 export default function MenuBar() {
   return (
     <>
-        <Navbar expand="md">
+        <Navbar expand="md" navbar-container>
           <Container fluid>
             <Navbar.Brand href="/">
               <Image
