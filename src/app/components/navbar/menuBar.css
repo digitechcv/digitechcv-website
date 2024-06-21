@@ -10,9 +10,9 @@
 
 .logo-navBar {
     margin-left: 25px;
-    background-color: white !important;
 }
 
-.navbar-container {
+.navbar {
     background-color: white !important;
+    font-size: 1.5rem;
 }
