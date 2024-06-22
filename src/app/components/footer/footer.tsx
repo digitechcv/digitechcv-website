@@ -33,7 +33,7 @@ function Footer() {
                     <h6>Contactos</h6>
                     <ul>
                         <a href="mailto:info@digiitechcv.com" className='pb-1'><li className='pb-1'> <Icon.Envelope/>  info@digiitechcv.com</li></a>
-                        <a href="tel:+238985455 / +2385784512" className='mt-1'><li><Icon.Telephone/> +238985455 / +2385784512</li></a>
+                        <li className='mt-1'><Icon.Telephone/> +238985455 / +2385784512</li>
                     </ul>
                 </Col>
                 <Col className='footer-socialMedia pt-5'>
