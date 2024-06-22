@@ -32,8 +32,8 @@ function Footer() {
                 <Col className='footer-contact'>
                     <h6>Contactos</h6>
                     <ul>
-                        <a href="mailto:info@digiitechcv.com" className='pb-1'><li className='pb-1'> <Icon.Envelope/>  info@digiitechcv.com</li></a>
-                        <li className='mt-1'><Icon.Telephone /> +238985455 / +2385784512</li>
+                        <a href="mailto:digitechitcv@gmail.com" className='pb-1'><li className='pb-1'> <Icon.Envelope/> digitechitcv@gmail.com</li></a>
+                        <li className='mt-1'><Icon.Telephone /> +238 9888406 / 9807567</li>
                     </ul>
                 </Col>
                 <Col className='footer-socialMedia pb-4'>
