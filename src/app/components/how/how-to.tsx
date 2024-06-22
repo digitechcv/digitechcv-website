@@ -17,7 +17,7 @@ const HowTo = () => {
               <Card.Body>
                 <Card.Title className='text-center'>Envie-nos uma mensagem</Card.Title>
                 <Card.Text>
-                  Entre em contato conosco para discutir suas necessidades e receber soluções personalizadas. Estamos prontos para ajudar com dúvidas, orçamentos ou projetos específicos.
+                  Entre em contato connosco para discutir suas necessidades e receber soluções personalizadas. Estamos prontos para ajudar com dúvidas, orçamentos ou projetos específicos.
                 </Card.Text>
               </Card.Body>
               <a href="#contactForm" className='text-center mb-2 arrow-how-to'>
