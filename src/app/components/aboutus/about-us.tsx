@@ -22,8 +22,8 @@ const AboutUs = () => {
             <div className="col-md-6">
                 <Image src='/images/Missao.png' className='d-inline w-75 img-aboutUs' alt='...' style={{}} />
             </div>
-            <div className="col-md-6 d-flex align-items-center text-black">
-              <Carousel.Caption className='text-start missao text-center mt-5' style={{ position: 'relative' }}>
+            <div className="col-md-6 d-flex text-black">
+              <Carousel.Caption className='text-start missao mt-5' style={{ position: 'relative' }}>
                 <h3 className='text-black pb-3'>Missão</h3>
                   <p className='text-black'>A DigiTech, LDA proporciona soluções de TI de excelência que emocionam nossos clientes, gerando resultados com alto comprometimento e qualidade. Colocamos o cliente no centro de tudo, criando experiências positivas e memoráveis. Valorizamos as emoções e o bem-estar dos clientes, construindo parcerias sólidas e sustentáveis baseadas na confiança e satisfação mútua.</p>
                   <br />
@@ -46,7 +46,7 @@ const AboutUs = () => {
               />
             </div>
             <div className="col-md-6 d-flex align-items-center">
-              <Carousel.Caption className='text-start visao text-center mt-5' style={{ position: 'relative' }}>
+              <Carousel.Caption className='text-start mt-5' style={{ position: 'relative' }}>
                 <h3 className='text-black pb-3 '>Visão</h3>
                 <p className='text-black'>Buscamos ser referência no mercado de tecnologia da informação, que transforma sonhos digitais em experiências emocionantes e memoráveis. Queremos inspirar confiança e satisfação plena em cada interação, criando soluções inovadoras que ressoem com os sentimentos e aspirações dos nossos clientes.</p>
               </Carousel.Caption>
@@ -65,7 +65,7 @@ const AboutUs = () => {
               />
             </div>
             <div className="col-md-6 d-flex align-items-center">
-              <Carousel.Caption className='text-start valores text-center mt-5' style={{ position: 'relative' }}>
+              <Carousel.Caption className='text-start valores mt-5' style={{ position: 'relative' }}>
                 <h3 className='text-black pb-3'>Valores</h3>
                   <p className='text-black'>
                     Inovação Constante - Estamos comprometidos em permanecer na frente da inovação.
