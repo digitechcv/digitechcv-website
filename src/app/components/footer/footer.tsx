@@ -23,20 +23,20 @@ function Footer() {
                 <Col className='footer-services pt-5 mt-5'>
                     <h6>Serviços</h6>
                     <ul>
-                        <a href='service1'><li>Desenvolvimento de Software </li></a> 
-                        <a href='service2'><li>Assistência Técnica </li></a>
-                        <a href="service3"><li>Formação em TICS </li></a>
-                        <a href="service4"><li>Marketing Digital </li></a>
+                       <li>Desenvolvimento de Software </li>
+                        <li>Assistência Técnica </li>
+                        <li>Formação em TICS </li>
+                        <li>Marketing Digital </li>
                     </ul>
                 </Col>
-                <Col className='footer-contact pt-5'>
+                <Col className='footer-contact pt-5 mt-5'>
                     <h6>Contactos</h6>
                     <ul>
                         <a href="mailto:info@digiitechcv.com" className='pb-1'><li className='pb-1'> <Icon.Envelope/>  info@digiitechcv.com</li></a>
                         <li className='mt-1'><Icon.Telephone/> +238985455 / +2385784512</li>
                     </ul>
                 </Col>
-                <Col className='footer-socialMedia pt-5'>
+                <Col className='footer-socialMedia pt-3 mt-5'>
                     <h6>Redes sociais</h6>
                     <ul className='FootersocialMedia'> 
                         <a href="https://www.instagram.com/digitechcv?igsh=MXRpcWpvYWNpMGs2bQ=="><li className='mx-2'><Icon.Instagram/></li></a>
