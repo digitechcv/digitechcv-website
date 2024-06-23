@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import GoogleAnalytics from "./components/google-analytics/GoogleAnalytics";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 

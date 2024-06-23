@@ -8,6 +8,7 @@ import Clients from "./components/clients/clients";
 import HeroSection from "./components/hero/hero-section";
 import MenuBar from "./components/navbar/MenuBar";
 
+
 export default function Home() {
   return (
     <>
