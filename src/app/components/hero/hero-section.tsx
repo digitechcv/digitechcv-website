@@ -4,7 +4,8 @@ import classes from './hero.module.css'
 
 const HeroSection = () => {
   return (
-    <Container className={classes['hero-section']} fluid/>
+    <Container className={classes['hero-section']} fluid />
+    
   )
 }
 

@@ -12,14 +12,14 @@ interface ServiceModalProps {
 }
 
 const ServiceModal: React.FC<ServiceModalProps> = ({ showModal, handleCloseModal, selectedContentIndex }) => {
-    
+
     let modalContent;
     switch (selectedContentIndex) {
         case 0:
             modalContent = {
                 image: "https://cdn-icons-png.flaticon.com/128/1163/1163463.png",
                 title: "Desenvolvimento de Software",
-                description: "Transformamos suas ideias em soluções digitais personalizadas. Com uma equipa experiente de desenvolvedores, criamos software sob medida que atende às suas necessidades específicas, seja para automação de processos, aplicativos móveis, sistemas de gestão empresarial ou qualquer outra aplicação."
+                description: ["Landing Page", "One Page", "Institucional", "E-commerce", "Mobile"]
             };
             break;
         case 1:
@@ -40,7 +40,7 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ showModal, handleCloseModal
             modalContent = {
                 image: "https://cdn-icons-png.flaticon.com/128/3141/3141181.png",
                 title: "Marketing Digital",
-                description: "Alcance seu público-alvo de forma eficaz e impulsione seus negócios online com nossos serviços de marketing digital. Desde estratégias de SEO e gerenciamento de mídia social até campanhas de publicidade online, ajudamos a aumentar sua visibilidade, gerar leads qualificados e impulsionar o crescimento da sua empresa no mundo digital."
+                description: ["Criação de Paginas nas Redes Sociais", "Gestão de Páginas de Redes Sociais", "Criação de Conteúdo Multimídia para Redes Sociais", "Tráfego pago", "Estratégias de Marketing"]
             };
             break;
         default:
@@ -58,7 +58,15 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ showModal, handleCloseModal
             </Modal.Header>
             <Modal.Body>
                 <Image src={modalContent.image} alt={modalContent.title} style={{ width: '100px' }} />
-                <p>{modalContent.description}</p>
+                {Array.isArray(modalContent.description) ? (
+                    <ul>
+                        {modalContent.description.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
+                    </ul>
+                ) : (
+                    <p>{modalContent.description}</p>
+                )}
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="" onClick={handleCloseModal}>
@@ -70,4 +78,3 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ showModal, handleCloseModal
 }
 
 export default ServiceModal;
-

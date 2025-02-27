@@ -6,3 +6,10 @@ div.modal-body p {
     padding: 1rem;
     font-size: 18px;
 }
+
+ul li {
+    list-style-type: circle; 
+    margin: 0px;
+    padding: 4px;
+    font-size: 1.1rem;
+}

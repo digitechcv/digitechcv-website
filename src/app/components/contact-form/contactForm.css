@@ -3,7 +3,7 @@
 .containerForm {
     color: white;
     background: linear-gradient(90deg, #00102d 0%, #0059fc 56%);
-    height: 600px;
+    height: 400px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@
 
 .left-side h3 {
     width: 90%;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
 }
 
 .left-side p {
@@ -28,12 +28,12 @@
 button.buttonSubmit {
     width: 100%;
     padding: 1rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .right-side1 input, .right-side1 select {
-    padding: 0.8rem;
-    font-size: 1.3rem;
+    padding: 0.5rem;
+    font-size: 1rem;
 }
 
 /* .bg {

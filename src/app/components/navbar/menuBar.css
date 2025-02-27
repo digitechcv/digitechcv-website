@@ -1,18 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
 
 .nav-link {
-    text-transform: uppercase;
-    font-family: 'Yantramanav', sans-serif;
-    color: black;
-    font-weight: 700;
-    font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Yantramanav', sans-serif;
+  color: rgb(58, 56, 56);
+  font-weight: 700;
+  font-size: 1.3rem;
+  transition: font-size 0.3s, color 0.3s; 
+}
+
+.nav-link.active {
+  font-size: 1.5rem; 
+  color: #000000; 
 }
 
 .logo-navBar {
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 .navbar {
-    background-color: white !important;
-    font-size: 1.5rem;
+  background-color: white !important;
+  font-size: 1.3rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid #e0e0e0;
 }
