@@ -1,31 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
-
-
-.how-to-container {
-    font-family: 'Yantramanav', sans-serif;
+.how-to-section {
+  background-color: #091d3e;
+  padding: 6rem 0;
+  font-family: 'Yantramanav', sans-serif;
 }
 
-.img-how-to3 {
-    height: 128px;
-    width: 101px;
-}
-
-.container-how-to {
-    padding-bottom: 45px;
-    font-family: 'Yantramanav', sans-serif;
+.how-to-container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .card-how-to {
-    min-width: 300px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 420px; /* altura mínima consistente */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.5rem;
+  margin: 1rem;
+}
+
+.card-how-to:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.img-how-to {
+  transition: transform 0.4s ease;
+}
+
+.image-wrapper {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.image-wrapper:hover .img-how-to {
+  transform: scale(1.1);
+}
+
+.bg-card-1 {
+  background-color: rgba(16, 42, 84, 0.6);
+}
+
+.bg-card-2 {
+  background-color: rgba(16, 76, 186, 0.6);
+}
+
+.chevron-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.arrow-how-to svg {
+  border: 2px solid #ffffff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding: 8px;
+  background-color: #ffffff33;
+  color: #fff;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.arrow-how-to:hover svg {
+  background-color: #0059fc;
+  transform: scale(1.2);
+  color: #fff;
 }
 
 
-
-svg.bi.bi-chevron-right {
-    border: 1px dotted black;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    padding: 10px;
-    background-color: rgb(167, 167, 165);
+/* Responsivo */
+@media (max-width: 768px) {
+  .how-to-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
 }

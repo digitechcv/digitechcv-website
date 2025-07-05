@@ -3,37 +3,21 @@
 .containerForm {
     color: white;
     background: linear-gradient(90deg, #00102d 0%, #0059fc 56%);
-    height: 600px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Yantramanav', sans-serif;
 } 
 
-.left-side h3 {
-    width: 90%;
-    font-size: 1.9rem;
+/* Ajustes para o texto */
+.left-side {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.left-side p {
-    font-size: 1.3rem;
-    margin-left: 1px;
-}
 
-.projectp, .form-label {
-    font-size: 1.3rem;
-}
-
-button.buttonSubmit {
+/* Ajustes para o formulário */
+.right-side1 {
     width: 100%;
-    padding: 1rem;
-    font-size: 1.3rem;
-}
-
-.right-side1 input, .right-side1 select {
-    padding: 0.8rem;
-    font-size: 1.3rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* .bg {
@@ -44,25 +28,19 @@ button.buttonSubmit {
     opacity: 1;
 } */
 
+/* Centraliza o conteúdo da seção em colunas verticais */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
 
 
+
+/* Melhorar visibilidade do texto em ecrãs pequenos */
 @media (max-width: 767px) {
-    .projectp, .left-side p {
-        display: none;
+    .left-side {
+        padding: 0 1rem;
     }
-
-    .left-side h3, .form-label {
-        font-size: 1rem;
-    }
-
-    .bothside {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .right-side1 input, .right-side1 select {
-        padding: 0.8rem;
-        font-size: 0.8rem;
-    }
-    
 }

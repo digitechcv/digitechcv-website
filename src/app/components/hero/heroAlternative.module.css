@@ -1,0 +1,87 @@
+.altHero {
+  padding: 6rem 0;
+  background-color: #f9f9f9;
+  font-family: 'Yantramanav', sans-serif;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00102d;
+  margin-bottom: 1rem;
+}
+
+.paragraph {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.quote {
+  font-size: 1rem;
+  color: #0059fc;
+  font-weight: 500;
+  border-left: 4px solid #0059fc;
+  padding-left: 1rem;
+}
+
+.imageWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blobContainer {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 120%;
+  z-index: 0;
+}
+
+.blob {
+  width: 95%;
+  height: auto;
+}
+
+.image {
+  position: relative;
+  z-index: 1;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .quote {
+    padding-left: 0;
+    border-left: none;
+    margin-bottom: 1rem;
+  }
+
+  .paragraph, .quote {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .imageWrapper {
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+}

@@ -1,0 +1,63 @@
+#servicos {
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+}
+.servico-card {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    transition: transform 0.4s ease;
+  }
+  
+  .bg-image-servico {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #ccc;
+    transition: transform 0.4s ease, background-size 0.5s;
+    background-size: 100%;
+    background-position: center;
+  }
+  
+  .servico-card:hover .bg-image-servico {
+    transform: scale(1.05); /* pequeno scale apenas na imagem */
+  }
+  
+  .servico-card .card {
+    transition: box-shadow 0.4s ease, outline 0.4s ease;
+  }
+  
+  .servico-card:hover .card {
+    outline: 1px solid black;        /* simula ring */
+    outline-offset: 4px;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1); /* efeito extra suave */
+  }
+  
+  /* Gradient overlay no texto */
+  .bg-gradient-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  }
+
+  .section-title-service {
+    color: #00102d;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative; 
+    z-index: 1;
+    margin-bottom:6rem !important;
+    margin-top: 5rem !important;
+    font-size: 3rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .section-title-service {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .servico-card {
+    padding: 1rem;
+  }
+}
