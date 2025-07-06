@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import StyledServiceModal from "../StyledServiceModal/StyledServiceMOdal";
-import "./servicos.css";
+import "./Servicos.css";
 
 const servicos = [
   {
