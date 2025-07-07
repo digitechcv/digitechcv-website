@@ -20,10 +20,10 @@ function Footer() {
                 <Col className='footer-services'>
                     <h6>Serviços</h6>
                     <ul>
-                        <a href='service1'><li>Desenvolvimento de Software</li></a>
-                        <a href='service2'><li>Assistência Técnica</li></a>
-                        <a href="service3"><li>Formação em TICS</li></a>
-                        <a href="service4"><li>Marketing Digital</li></a>
+                        <li>Desenvolvimento de Software</li>
+                        <li>Assistência Técnica</li>
+                        <li>Formação em TICS</li>
+                        <li>Marketing Digital</li>
                     </ul>
                 </Col>
                 <Col className='footer-contact'>

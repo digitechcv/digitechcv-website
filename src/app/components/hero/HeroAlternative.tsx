@@ -49,7 +49,7 @@ export const HeroAlternative = () => {
                 />
               </motion.div>
               <Image
-                src="https://c0.wallpaperflare.com/preview/472/730/407/accounting-alone-analysis-analytics.jpg"
+                src="/images/team.png"
                 alt="Equipa DigiTech"
                 width={600}
                 height={400}

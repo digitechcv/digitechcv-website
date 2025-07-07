@@ -12,7 +12,7 @@ const servicos = [
       "https://validthemes.net/themeforest/wp/crysa/wp-content/uploads/2022/07/4.jpg",
   },
   {
-    title: "Assistência Técnica",
+    title: "Consultoria Tecnológica e Transformação Digital",
     image:
       "https://validthemes.net/themeforest/wp/crysa/wp-content/uploads/2022/07/9-1.jpg",
   },
@@ -63,7 +63,7 @@ const Servicos = () => {
                   >
                     <Card.Body className="d-flex flex-column justify-content-end p-4 bg-gradient-overlay">
                       <div className="d-flex justify-content-between align-items-center">
-                        <h3 className="mb-0 fs-4 fs-md-3 text-white">{servico.title}</h3>
+                        <h5 className="mb-0 fs-6 fs-md-5 text-white">{servico.title}</h5>
                         <svg
                           stroke="currentColor"
                           fill="none"
