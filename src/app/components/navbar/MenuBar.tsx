@@ -11,29 +11,37 @@ import { useScrollDirection } from '../hooks/useScrollDirection';
 
 export const MenuBar = () => {
   const [activeLink, setActiveLink] = useState('');
+  const [showOffcanvas, setShowOffcanvas] = useState(false); // 🔥 estado do menu
   const scrollDirection = useScrollDirection();
+
+  const handleCloseOffcanvas = () => setShowOffcanvas(false);
+  const handleShowOffcanvas = () => setShowOffcanvas(true);
 
   useEffect(() => {
     const handleScroll = () => {
-  const sections = ['home', 'sobre', 'servicos', 'clientes'];
-  const threshold = window.innerHeight / 2; // metade da viewport
+      const sections = ['home', 'sobre', 'servicos', 'clientes'];
+      const threshold = window.innerHeight / 2; // metade da viewport
 
-  for (let id of sections) {
-    const el = document.getElementById(id);
-    if (el) {
-      const rect = el.getBoundingClientRect();
-      if (rect.top <= threshold && rect.bottom >= threshold) {
-        setActiveLink(id);
-        break;
+      for (let id of sections) {
+        const el = document.getElementById(id);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= threshold && rect.bottom >= threshold) {
+            setActiveLink(id);
+            break;
+          }
+        }
       }
-    }
-  }
-};
-
+    };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handleNavClick = (id: string) => {
+    handleCloseOffcanvas(); // 🔥 fecha o menu mobile
+    setActiveLink(id);
+  };
 
   return (
     <Navbar
@@ -51,8 +59,13 @@ export const MenuBar = () => {
             alt="Digitechcv Logo"
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
+        <Navbar.Toggle 
+          aria-controls={`offcanvasNavbar-expand-md`}
+          onClick={handleShowOffcanvas} // 🔥 abre o menu
+        />
         <Navbar.Offcanvas
+          show={showOffcanvas} // 🔥 controla visibilidade
+          onHide={handleCloseOffcanvas}
           id={`offcanvasNavbar-expand-md`}
           aria-labelledby={`offcanvasNavbarLabel-expand-md`}
           placement="end"
@@ -64,10 +77,34 @@ export const MenuBar = () => {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-center flex-grow-1 pe-3 nav-links">
-              <Nav.Link href="#home" className={activeLink === 'home' ? 'active' : ''}>home</Nav.Link>
-              <Nav.Link href="#sobre" className={activeLink === 'sobre' ? 'active' : ''}>sobre nós</Nav.Link>
-              <Nav.Link href="#servicos" className={activeLink === 'servicos' ? 'active' : ''}>serviço</Nav.Link>
-              <Nav.Link href="#clientes" className={activeLink === 'clientes' ? 'active' : ''}>clientes</Nav.Link>
+              <Nav.Link 
+                href="#home"
+                className={activeLink === 'home' ? 'active' : ''}
+                onClick={() => handleNavClick('home')} // 🔥 fecha menu ao clicar
+              >
+                home
+              </Nav.Link>
+              <Nav.Link 
+                href="#sobre"
+                className={activeLink === 'sobre' ? 'active' : ''}
+                onClick={() => handleNavClick('sobre')}
+              >
+                sobre nós
+              </Nav.Link>
+              <Nav.Link 
+                href="#servicos"
+                className={activeLink === 'servicos' ? 'active' : ''}
+                onClick={() => handleNavClick('servicos')}
+              >
+                serviço
+              </Nav.Link>
+              <Nav.Link 
+                href="#clientes"
+                className={activeLink === 'clientes' ? 'active' : ''}
+                onClick={() => handleNavClick('clientes')}
+              >
+                clientes
+              </Nav.Link>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
