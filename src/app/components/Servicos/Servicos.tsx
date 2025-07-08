@@ -12,7 +12,7 @@ const servicos = [
       "https://validthemes.net/themeforest/wp/crysa/wp-content/uploads/2022/07/4.jpg",
   },
   {
-    title: "Consultoria Tecnológica e Transformação Digital",
+    title: "Consultoria Tecnológica",
     image:
       "https://validthemes.net/themeforest/wp/crysa/wp-content/uploads/2022/07/9-1.jpg",
   },

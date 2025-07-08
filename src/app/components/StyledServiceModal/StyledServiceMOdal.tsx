@@ -29,7 +29,7 @@ const StyledServiceModal: React.FC<ServiceModalProps> = ({
       ]
     },
     {
-      title: 'Consultoria Tecnológica e Transformação Digital',
+      title: 'Consultoria Tecnológica',
       image: 'https://cdn-icons-png.flaticon.com/128/7576/7576835.png',
       shortDescription: `Apoiamos empresas na sua jornada digital com diagnóstico personalizado, planeamento estratégico e formação de equipas. Facilitamos a transição digital de negócios, promovendo inovação, eficiência e crescimento sustentável.`,
       description: [
