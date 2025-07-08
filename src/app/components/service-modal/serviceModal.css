@@ -2,14 +2,25 @@ div.modal-body img {
     margin: 1rem;
 }
 
-div.modal-body p {
-    padding: 1rem;
-    font-size: 18px;
+/* Estilo para os itens da lista */
+div.modal-body ul {
+    list-style-type: none; /* remove os bullets padrão */
+    padding-left: 0;
 }
 
-ul li {
-    list-style-type: circle; 
-    margin: 0px;
-    padding: 4px;
-    font-size: 1.1rem;
+div.modal-body ul li {
+    padding: 0.75rem 1rem;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd; /* linha divisória entre os itens */
+    position: relative;
+    padding-left: 2rem; /* espaço para o ícone */
+}
+
+/* Adiciona um ícone ou marcador personalizado antes de cada item */
+div.modal-body ul li::before {
+    content: "✔"; /* você pode trocar por outro símbolo ou até usar um ícone */
+    color: #2868a7;
+    font-weight: bold;
+    position: absolute;
+    left: 0.5rem;
 }

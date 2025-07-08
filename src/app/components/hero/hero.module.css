@@ -1,8 +1,75 @@
-.hero-section {
-  width: 100%;
-  height: 80vh;
-  background: url('/images/banner.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 110px;
+.vantaHero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  margin-top: 80px;
 }
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  padding: 8rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.textBlock {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: 'Yantramanav', sans-serif;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00102d;
+  line-height: 1.2;
+}
+
+.paragraph {
+  font-size: 1.125rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.quote {
+  font-size: 1rem;
+  color: #0059fc;
+  font-weight: 500;
+  border-left: 4px solid #0059fc;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+.contactButton {
+  margin-top: 2rem;
+  background-color: #0059fc;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+  align-self: center;
+  display: block;
+}
+
+.contactButton:hover {
+  background-color: #003bb3;
+  color: #fff;
+}
+
+
+
+

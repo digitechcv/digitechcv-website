@@ -13,41 +13,72 @@ interface ServiceModalProps {
 
 const ServiceModal: React.FC<ServiceModalProps> = ({ showModal, handleCloseModal, selectedContentIndex }) => {
 
-    let modalContent;
+    let modalContent: {
+        image: string;
+        title: string;
+        description: string[];
+    };
+
     switch (selectedContentIndex) {
         case 0:
             modalContent = {
                 image: "https://cdn-icons-png.flaticon.com/128/1163/1163463.png",
                 title: "Desenvolvimento de Software",
-                description: ["Landing Page", "One Page", "Institucional", "E-commerce", "Mobile"]
+                description: [
+                    "Landing Page - Páginas únicas e objetivas para converter visitantes em clientes.",
+                    "One Page - Websites compactos, modernos e responsivos para empresas e profissionais.",
+                    "Site Institucional - Apresentação profissional da sua empresa na internet.",
+                    "E-Commerce - Lojas online completas, com integração de pagamentos e gestão de produtos.",
+                    "Aplicações Mobile - Desenvolvimento de aplicativos Android e iOS personalizados.",
+                    "Sistemas Web - Sistemas personalizados para otimização de processos empresariais."
+                ]
             };
             break;
         case 1:
             modalContent = {
                 image: "https://cdn-icons-png.flaticon.com/128/7576/7576835.png",
-                title: "Help Desk",
-                description: "Nosso serviço de Help Desk oferece suporte técnico abrangente para resolver rapidamente qualquer problema que você possa enfrentar com seus sistemas e equipamentos informáticos. Nossa equipe  está disponível para fornecer assistência remota ou presencial, garantindo que seus sistemas funcionem sem problemas. Além disso, oferecemos serviços de manutenção e reparação de equipamentos informáticos para garantir o desempenho máximo e a confiabilidade de seus dispositivos, desde computadores desktop e laptops."
+                title: "Assistência Técnica (Helpdesk)",
+                description: [
+                    "Suporte Técnico Remoto e Presencial - Solução rápida para problemas em TI.",
+                    "Manutenção Preventiva e Corretiva - Revisão periódica e reparo de equipamentos.",
+                    "Configuração e Otimização de Computadores - Melhoramos o desempenho do seu PC.",
+                    "Instalação e Configuração de Softwares - Aplicativos essenciais para o seu negócio.",
+                    "Backup e Recuperação de Dados-- Proteção contra perda de arquivos importantes."
+                ]
             };
             break;
         case 2:
             modalContent = {
                 image: "https://cdn-icons-png.flaticon.com/128/10242/10242258.png",
-                title: "Formações nas TICs",
-                description: "Nossa formação em Tecnologias da Informação e Comunicação (TICs) é projetada para atender tanto às necessidades das empresas quanto dos indivíduos. Oferecemos cursos práticos e personalizados para capacitar sua equipa empresarial com as habilidades necessárias em áreas como programação, segurança cibernética, administração de sistemas e muito mais. Além disso, nossos programas de formação também estão disponíveis para particulares que desejam aprimorar suas habilidades em TI, seja para avançar em suas carreiras ou simplesmente para expandir seu conhecimento em tecnologia."
+                title: "Formação em TICs",
+                description: [
+                    "Formação em Programação - Cursos de desenvolvimento web, mobile e software.",
+                    "Formação em Marketing Digital – Estratégias de tráfego, redes sociais e branding.",
+                    "Segurança Cibernética - Boas práticas e proteção contra ataques virtuais.",
+                    "Pacote Office e Ferramentas Digitais - Domínio do Word, Excel, PowerPoint e outras ferramentas.",
+                    "Automação e Inteligência Artificial - Como usar IA para otimizar processos."
+                ]
             };
             break;
         case 3:
             modalContent = {
                 image: "https://cdn-icons-png.flaticon.com/128/3141/3141181.png",
                 title: "Marketing Digital",
-                description: ["Criação de Paginas nas Redes Sociais", "Gestão de Páginas de Redes Sociais", "Criação de Conteúdo Multimídia para Redes Sociais", "Tráfego pago", "Estratégias de Marketing"]
+                description: [
+                    "Criação de Páginas nas Redes Sociais - Configuração e personalização de perfis para sua marca.",
+                    "Gestão de Redes Sociais - Planejamento, monitoramento e interação com seguidores.",
+                    "Criação de Conteúdo Multimídia - Desenvolvimento de posts, vídeos e artes para redes sociais.",
+                    "Tráfego Pago - Campanhas de anúncios no Facebook, Instagram e Google Ads para alcançar mais clientes.",
+                    "Estratégias de Marketing - Planejamento de ações digitais para potencializar sua marca.",
+                    "SEO (Otimização para Motores de Busca) - Melhoramos seu site para aparecer no Google."
+                ]
             };
             break;
         default:
             modalContent = {
                 image: "",
                 title: "",
-                description: "",
+                description: []
             };
     }
 
@@ -57,16 +88,12 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ showModal, handleCloseModal
                 <Modal.Title id="modal-title-vcenter">{modalContent.title}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <Image src={modalContent.image} alt={modalContent.title} style={{ width: '100px' }} />
-                {Array.isArray(modalContent.description) ? (
-                    <ul>
-                        {modalContent.description.map((item, index) => (
-                            <li key={index}>{item}</li>
-                        ))}
-                    </ul>
-                ) : (
-                    <p>{modalContent.description}</p>
-                )}
+                <img src={modalContent.image} alt={modalContent.title} style={{ width: '100px' }} />
+                <ul>
+                    {modalContent.description.map((item, index) => (
+                        <li key={index}>{item}</li>
+                    ))}
+                </ul>
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="" onClick={handleCloseModal}>
