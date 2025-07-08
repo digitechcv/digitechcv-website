@@ -1,29 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
 
-a.nav-link {
-  text-transform: uppercase;
+/* NAVBAR VISUAL */
+.main-navbar {
+  transition: transform 0.4s ease;
+  background-color: white;
+  z-index: 9999;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.main-navbar.hide {
+  transform: translateY(-100%);
+}
+
+.main-navbar.show {
+  transform: translateY(0);
+}
+
+/* LOGO */
+.logo-navBar {
+  margin-left: 25px;
+  width: 60px;
+  height: auto;
+}
+
+/* NAV LINKS */
+.nav-links {
+  gap: 2rem;
+}
+
+.nav-link {
   font-family: 'Yantramanav', sans-serif;
-  color: rgb(58, 56, 56);
-  font-weight: 700;
-  font-size: 1.3rem;
-  transition: font-size 0.3s, color 0.3s; 
+  text-transform: uppercase;
+  color: #00102d !important;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0059fc !important;
+  font-size: 1.3rem !important;
 }
 
 .nav-link.active {
-  font-size: 1.5rem; 
-  color: #000000; 
+  border-bottom: 2px solid #0059fc;
 }
 
-.logo-navBar {
-  margin-left: 25px;
+/* OFFCANVAS */
+.offcanvas-body {
+  padding-top: 2rem;
 }
 
-.navbar {
-  background-color: white !important;
-  font-size: 1.3rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  border-bottom: 1px solid #e0e0e0;
+.offcanvas .nav-link {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .logo-navBar {
+    width: 60px;
+  }
+
+  .main-navbar {
+    padding: 0.5rem 1rem;
+  }
 }

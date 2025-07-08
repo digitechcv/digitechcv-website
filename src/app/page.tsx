@@ -1,5 +1,4 @@
 
-import { NavBar } from "./components/navbar/NavBar";
 import HowTo from "./components/how/how-to";
 import AboutUs from "./components/aboutus/about-us";
 import Footer from "./components/footer/footer";
@@ -8,6 +7,7 @@ import Servicos from "./components/Servicos/Servicos";
 import ContactFormModal from "./components/contact-form/ContactFormModal";
 import { HeroSection } from "./components/hero/hero-section";
 import { HeroAlternative } from "./components/hero/HeroAlternative";
+import { MenuBar } from "./components/navbar/MenuBar";
 
 
 
@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <main className='bg-light'>
-        <NavBar />
+        <MenuBar />
         <HeroSection />
         <HeroAlternative  />
         <Servicos />
