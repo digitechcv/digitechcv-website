@@ -30,8 +30,8 @@ function Footer() {
                 <Col className='footer-contact'>
                     <h6>Contactos</h6>
                     <ul>
-                        <a href="mailto:info@digiitechcv.com"><li><Icon.Envelope /> info@digiitechcv.com</li></a>
-                        <li><Icon.Telephone /> +238985455 / +2385784512</li>
+                        <a href="mailto:info@digiitechcv.com" className='gap-x-4'><li><Icon.Envelope />  digitechitcv@gmail.com</li></a>
+                        <li><Icon.Telephone /> +2389888406 / 9807567</li>
                     </ul>
                 </Col>
                 <Col className='footer-socialMedia'>
